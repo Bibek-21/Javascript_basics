@@ -47,7 +47,19 @@ const D = Object.create(person);  // create() is used to create a new object usi
 D.firstName ="Harri";
 D.lastName = "Prasad";
 // D.Qualification();
-Object.defineProperties()
+const object1 = {};
 
+Object.defineProperties(object1,
+    {
+        property1: {
+            value: 42,
+            writable: true
+          },
+          property2:{
+            value: 12,
+            writable: false
+          }
 
-  
+    }
+);
+console.log(object1.property2)  ;
