@@ -109,8 +109,17 @@ Object.freeze(environ); // it gets freezed and it cannot be changed
 //  console.log(Object.getPrototypeOf(ag)===af); // they both have same prototype :true
 //  console.log(Object.getPrototypeOf(ah)===af); // they have different prototype:false
 //hasOwn checks if property is present or not
-console.log(Object.hasOwn(obj1,'property3')); //returns true
-console.log(Object.hasOwn(obj1,'property2')); //returns false
+// console.log(Object.hasOwn(obj1,'property3')); //returns true
+// console.log(Object.hasOwn(obj1,'property2')); //returns false
 //Object.is()is use to check if two values are same or not
-
-console.log(Object.is(1,1));
+// console.log(Object.is(1,1));
+console.log(Object.isExtensible(environ));
+Object.preventExtensions(ag);       //it prevents extensible it allows changes within existing properties
+console.log(Object.isExtensible(ag));
+console.log(Object.isFrozen(environ)); //environ was previously froozen
+//seal freeze prevetExtensiions are interrelated
+const prevent = {
+    property: "FSD"
+};
+Object.seal(prevent);
+console.log(Object.isSealed(prevent));
