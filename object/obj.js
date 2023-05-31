@@ -62,7 +62,7 @@ Object.defineProperties(object1,
 
     }
 );
-console.log(object1.property2)  ;
+// console.log(object1.property2)  ;
 
 const environ = {
     a: "What",
@@ -72,11 +72,11 @@ const environ = {
 
 for(const[k,v] of Object.entries(environ))      // it returns an array of object enumerables
 {
-    console.log(k+":"+v);
+    // console.log(k+":"+v);
 }
 Object.freeze(environ); // it gets freezed and it cannot be changed
 // environ.a = "When"; // it gives an error [cannot assign to read only propety a...]
-console.log(environ.a);
+// console.log(environ.a);
 
 //fromEntries() changes key-value pair  into object
  const teacher = new Map(
@@ -84,7 +84,7 @@ console.log(environ.a);
      [ "c" ,"d" ], 
      ["e","f"]]
  ) // Map must be used in this case
- console.log(Object.fromEntries(teacher));
+//  console.log(Object.fromEntries(teacher));
 
  const obj1 = {
     property3: 12,
@@ -93,6 +93,24 @@ console.log(environ.a);
  };
 
  const ab = Object.getOwnPropertyDescriptor(obj1,'property3'); // mark that property is under single inverted comma
- console.log(ab);
- const ac = Object.getOwnPropertyDescriptors(obj1)
- console.log(ac);
+//  console.log(ab); //it only gives property of property of property3
+ const ac = Object.getOwnPropertyDescriptors(obj1) // it gives all the properties
+//  console.log(ac); // it gives property of all properties in the object
+
+ const ad = Object.getOwnPropertyNames(obj1); // gives object properties names
+ const ae = Object.getOwnPropertySymbols(obj1); // it gives symbols of the attribute in the object
+//  console.log(ad);
+//  console.log(ad.length); 
+ //getPrototypeof is used to check the prototype ofobject as in below
+ const af={ };
+ const ag = Object.create(af);
+ const ah = Object.create(ab);
+
+//  console.log(Object.getPrototypeOf(ag)===af); // they both have same prototype :true
+//  console.log(Object.getPrototypeOf(ah)===af); // they have different prototype:false
+//hasOwn checks if property is present or not
+console.log(Object.hasOwn(obj1,'property3')); //returns true
+console.log(Object.hasOwn(obj1,'property2')); //returns false
+//Object.is()is use to check if two values are same or not
+
+console.log(Object.is(1,1));
