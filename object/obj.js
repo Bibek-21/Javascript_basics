@@ -63,3 +63,36 @@ Object.defineProperties(object1,
     }
 );
 console.log(object1.property2)  ;
+
+const environ = {
+    a: "What",
+    b: "chill"
+};
+
+
+for(const[k,v] of Object.entries(environ))      // it returns an array of object enumerables
+{
+    console.log(k+":"+v);
+}
+Object.freeze(environ); // it gets freezed and it cannot be changed
+// environ.a = "When"; // it gives an error [cannot assign to read only propety a...]
+console.log(environ.a);
+
+//fromEntries() changes key-value pair  into object
+ const teacher = new Map(
+    [[ "a" , "b"],
+     [ "c" ,"d" ], 
+     ["e","f"]]
+ ) // Map must be used in this case
+ console.log(Object.fromEntries(teacher));
+
+ const obj1 = {
+    property3: 12,
+    property4 : "ohh ok"
+
+ };
+
+ const ab = Object.getOwnPropertyDescriptor(obj1,'property3'); // mark that property is under single inverted comma
+ console.log(ab);
+ const ac = Object.getOwnPropertyDescriptors(obj1)
+ console.log(ac);
