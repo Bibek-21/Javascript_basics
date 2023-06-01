@@ -59,9 +59,9 @@ const y = element => console.log(element);
 // console.log(array6.indexOf(123));           // gives -1 as output
 // console.log(Array.isArray(array6));     //checks if the provided arg is array or  not
 
-console.log(array6.join('-'));          //output: 1-2-3-1-5-7
-console.log(array6.join('+'));          //output: 1+2+3+1+5+7
-console.log(array6.join('*'));          //output:1*2*3*1*5*7
+// console.log(array6.join('-'));          //output: 1-2-3-1-5-7
+// console.log(array6.join('+'));          //output: 1+2+3+1+5+7
+// console.log(array6.join('*'));          //output:1*2*3*1*5*7
 
 // keys contains the keys for each index
 const array7 = ['a','b','a','c'];
@@ -71,11 +71,27 @@ for(const i of array_key)
     // console.log(i);
 }
 
-console.log(array7.lastIndexOf('a'))        //it returns thelast index :output : 2
+// console.log(array7.lastIndexOf('a'))        //it returns thelast index :output : 2
 
-console.log(array7.pop());      //it permanently deletes the array contained
-console.log(array7);        // output : (3) ['a', 'b', 'a']  ---> 'c' has been removed by pop operation
+// console.log(array7.pop());      //it permanently deletes the array contained
+// console.log(array7);        // output : (3) ['a', 'b', 'a']  ---> 'c' has been removed by pop operation
 
 array7.push('x');           // 'x'has been pushed into the array
-console.log(array7);        //output: (3) ['a', 'b', 'a']
+// console.log(array7);        //output: (4) ['a', 'b', 'a', 'x']  ---> 'x' has been added into the array
+
+const array8 = [1,2,3,4];
+
+const initial = 0;
+
+const Summation = array8.reduce(((store,init)=>store + init),initial );
+console.log(Summation);         //it gives a single value as result at the end
+// reducer  works on each element on the array returns a single value that has been calculated as a result from the previous call
+const summation = array8.reduceRight(((element)=>element) );
+const Initial = 1;
+
+const result = array8.reduce(((store,init)=>store / init  ), Initial );  // process: ((((1/4)/3)/2)/1)  output: 0.041666666666666664
+
+// console.log(summation);
+console.log(result);
+
 
