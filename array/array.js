@@ -114,11 +114,9 @@ const month = ['jan','feb','apr'];
 month.splice(2,0,'march');      //it adds 'march' at 2 index and 0 means adding without replacing i.e remove 0 element before replacing
 console.log(month);
 
-array8.unshift('a','b');
-console.log(array8);
+array8.unshift('a','b');    //It adds the provided elements in the array at the begining
+// console.log(array8);
 
+// console.log(array8.toString()); //it returns the string of the specified array or the elment
 
-
-
-
-
+// console.log(array8.with(2,'asdf'));  // yesle with sanga kaam garena ta yr
