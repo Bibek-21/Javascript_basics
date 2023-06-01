@@ -59,6 +59,23 @@ const y = element => console.log(element);
 // console.log(array6.indexOf(123));           // gives -1 as output
 // console.log(Array.isArray(array6));     //checks if the provided arg is array or  not
 
-console.log(array6.join('-'));
-console.log(array6.join('+'));
-console.log(array6.join('*'));
+console.log(array6.join('-'));          //output: 1-2-3-1-5-7
+console.log(array6.join('+'));          //output: 1+2+3+1+5+7
+console.log(array6.join('*'));          //output:1*2*3*1*5*7
+
+// keys contains the keys for each index
+const array7 = ['a','b','a','c'];
+const array_key = array7.keys();
+for(const i of array_key)
+{
+    // console.log(i);
+}
+
+console.log(array7.lastIndexOf('a'))        //it returns thelast index :output : 2
+
+console.log(array7.pop());      //it permanently deletes the array contained
+console.log(array7);        // output : (3) ['a', 'b', 'a']  ---> 'c' has been removed by pop operation
+
+array7.push('x');           // 'x'has been pushed into the array
+console.log(array7);        //output: (3) ['a', 'b', 'a']
+
