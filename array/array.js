@@ -79,19 +79,40 @@ for(const i of array_key)
 array7.push('x');           // 'x'has been pushed into the array
 // console.log(array7);        //output: (4) ['a', 'b', 'a', 'x']  ---> 'x' has been added into the array
 
-const array8 = [1,2,3,4];
+const array8 = [1,444,2,33,4];
+const array9 = [2,-4];
 
-const initial = 0;
+// const initial = 0;
+// const Initial = 0;
 
-const Summation = array8.reduce(((store,init)=>store + init),initial );
-console.log(Summation);         //it gives a single value as result at the end
-// reducer  works on each element on the array returns a single value that has been calculated as a result from the previous call
-const summation = array8.reduceRight(((element)=>element) );
-const Initial = 1;
+// const Summation = array8.reduce(((store,init)=>store / init),Initial ); //process: ((((0+1)+2)+3)+4) Output: 10
+// console.log(Summation);         //it gives a single value as result at the end
+// // reducer  works on each element on the array returns a single value that has been calculated as a result from the previous call
+// const summation = array8.reduceRight(((element,ele)=>element/ele), Initial );
 
-const result = array8.reduce(((store,init)=>store / init  ), Initial );  // process: ((((1/4)/3)/2)/1)  output: 0.041666666666666664
+// const result = array8.reduceRight(((store,init)=>store / init  ), Initial );  // process: ((((1/4)/3)/2)/1)  output: 0.041666666666666664
 
 // console.log(summation);
-console.log(result);
+// console.log(result);
+
+// const ummation = array9.reduceRight(((element,ele)=>element-ele), Initial );
+// console.log(ummation);
+// const Summation1 = array9.reduce(((store,init)=>store -init),Initial ); //process: ((((0+1)+2)+3)+4) Output: 10
+// console.log(Summation1);        // will come to this again
+
+// console.log(array9.reverse());      //reverses the element from the array [1,2]-->[2,1]
+
+// console.log(array8.shift());    // Output: 1
+// console.log(array8);        //Output: (3) [2, 3, 4]
+
+//  Syntax for slice--> slice(), slice(start),  slice(start, end)
+// slice is used to make a copy of array as new array and it takes args as start and end index, negative indexing can also be used
+// console.log(array8.slice(2));   // Output: (2) [3, 4] 
+array8.sort();
+console.log(array8);
+
+
+
+
 
 
