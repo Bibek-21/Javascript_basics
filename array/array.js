@@ -108,7 +108,13 @@ const array9 = [2,-4];
 //  Syntax for slice--> slice(), slice(start),  slice(start, end)
 // slice is used to make a copy of array as new array and it takes args as start and end index, negative indexing can also be used
 // console.log(array8.slice(2));   // Output: (2) [3, 4] 
-array8.sort();
+array8.sort();          // sorting is done by UTF-16 code units values. it is like sorting in dictionary example: 33 comes before 8
+console.log(array8);
+const month = ['jan','feb','apr'];
+month.splice(2,0,'march');      //it adds 'march' at 2 index and 0 means adding without replacing i.e remove 0 element before replacing
+console.log(month);
+
+array8.unshift('a','b');
 console.log(array8);
 
 
