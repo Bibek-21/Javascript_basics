@@ -19,17 +19,26 @@ const map_fnc = x=> x*2;
 // console.log(array4);
 // Expected output: Array [0, "a"]
 const array4 = array1.entries();
-console.log(array4.next().value);
-console.log(array4.next().value);
+// console.log(array4.next().value);
+// console.log(array4.next().value);
 
 const thres = (element)=> element <99;      //tests whether all elements in the array pass the test and returns boolean
-console.log(array1.every(thres));
+// console.log(array1.every(thres));
 const array5 =  array1.fill(0,1,5); // put 0 from index 1 to 5
-console.log(array5);
+// console.log(array5);
 
-const alpha = [ 'Rameshwor','k xa','what','how'];
-const filterfnc = (element)=> element.length<4;     // it is used to filter elements in thre array [creates a shallow copy of a portion of a given array]
-console.log(alpha.filter(filterfnc));
+const alpha = [ 'okey','Rameshwor','k xa','what','how'];
+const filterfnc = (element)=> element.length<1;     // it is used to filter elements in thre array [creates a shallow copy of a portion of a given array]
+// console.log(alpha.filter(filterfnc));
 
-const findvalue = (element)=> element.length>4;
-console.log(alpha.find(findvalue));
+ const findvalue = (element)=> element.length>2;     //returns the first element in the provided array that satisfies the given condition
+// console.log(alpha.find(findvalue));
+// console.log(alpha.findIndex(findvalue));        // it returns the index of the first element that passes the test function
+console.log(alpha.findLast(findvalue));     // it reverses the value and returns value of first index
+console.log(alpha.findLastIndex(findvalue));        // it returns the index for above found value
+
+const array6 = [1,2,3,1,5,7];
+console.log(array6.flat(2));        // it flats the array within an array  output: [(6) [1, 2, 3, 1, 5, 7]]
+
+console.log(array6.map(map_fnc));
+console.log(array6.flatMap(map_fnc));
