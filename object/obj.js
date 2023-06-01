@@ -126,9 +126,12 @@ Object.seal(prevent);
 console.log(Object.isSealed(prevent));
 
 const AH = {};
-const AI = {
+const AI = {            //object made
     type: "ok",
     caste: 12,
+    machine:(a,b)=>{
+         return (a+b);
+    }
 };
 console.log(AH.type);   // it gives undefined as it has no value
 Object.setPrototypeOf(AH,AI);       // it sets the prototype of AI to AH
@@ -145,3 +148,7 @@ Cat.prototype.tostring = function CatToString(){        //it returns a string re
 }
 
 console.log(cat1.tostring());
+console.log (Object.keys(AI));      // it returns the keyed propert name in the object AI
+
+console.log(Object.values(AI));     // it returns the property values in the object
+console.log(AI.machine(1,2));
