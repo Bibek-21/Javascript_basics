@@ -46,6 +46,7 @@ const person ={
 const D = Object.create(person);  // create() is used to create a new object using the existing object
 D.firstName ="Harri";
 D.lastName = "Prasad";
+// console.log(person.ID);
 // D.Qualification();
 const object1 = {};
 
@@ -72,7 +73,7 @@ const environ = {
 
 for(const[k,v] of Object.entries(environ))      // it returns an array of object enumerables
 {
-    // console.log(k+":"+v);
+    console.log(k+":"+v);
 }
 Object.freeze(environ); // it gets freezed and it cannot be changed
 // environ.a = "When"; // it gives an error [cannot assign to read only propety a...]
@@ -113,13 +114,34 @@ Object.freeze(environ); // it gets freezed and it cannot be changed
 // console.log(Object.hasOwn(obj1,'property2')); //returns false
 //Object.is()is use to check if two values are same or not
 // console.log(Object.is(1,1));
-console.log(Object.isExtensible(environ));
+// console.log(Object.isExtensible(environ));
 Object.preventExtensions(ag);       //it prevents extensible it allows changes within existing properties
-console.log(Object.isExtensible(ag));
-console.log(Object.isFrozen(environ)); //environ was previously froozen
+// console.log(Object.isExtensible(ag));
+// console.log(Object.isFrozen(environ)); //environ was previously froozen
 //seal freeze prevetExtensiions are interrelated
 const prevent = {
     property: "FSD"
 };
 Object.seal(prevent);
 console.log(Object.isSealed(prevent));
+
+const AH = {};
+const AI = {
+    type: "ok",
+    caste: 12,
+};
+console.log(AH.type);   // it gives undefined as it has no value
+Object.setPrototypeOf(AH,AI);       // it sets the prototype of AI to AH
+console.log(AH.type); // it gives ok
+const xyz= 1234.5634;
+console.log(xyz.toLocaleString('de-DE'));
+
+function Cat(name){
+    this.name = name;
+}
+const cat1 = new Cat('Aalu');
+Cat.prototype.tostring = function CatToString(){        //it returns a string representing an object
+    return this.name;
+}
+
+console.log(cat1.tostring());
