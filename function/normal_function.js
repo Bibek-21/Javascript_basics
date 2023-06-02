@@ -120,23 +120,27 @@ function mean(){
             return name;
         },
         getSex(){
-            return sx
+            return sx;
         },
-        setsex(newsx){
-            if(typeof(newsx)=="string"&& newsx.toLowerCase == "male"|| newsx.toLowerCase=="female")
+        setSex(newsx){
+            if((typeof (newsx) =="string") && (newsx.toLowerCase === "male"|| newsx.toLowerCase==="female"))
             {
-                sx= newsx;
+                sx=newsx;
             }
 
         }
     };
     return cat_det;
- }
+ };
 
 const cat_det = createName("joey");
 console.log(cat_det.getName());
 cat_det.setName("Okli");
 console.log(cat_det.getName());
+cat_det.setSex("male");
+
+console.log(cat_det.getSex());
+
 
  
   
