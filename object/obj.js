@@ -14,7 +14,7 @@ student1.marks();
 // console.log(student1.marks());
 const x = new Object();
 x.name = "Shyam";
-// console.log(x);
+console.log(x);
 
 const A = {
     a: "Appp",
@@ -25,12 +25,11 @@ const A = {
 const B ={
     d: "text",
     e: "ok",
-    f: 3,
-};
+    f: 3,};
 
 const C = Object.assign(A,B); //Object.assign(target,source) assigns value from source to target
 
-// console.log(C);
+console.log(C);
 // console.log(C===A);// The object is changed[It returns the modified target object.]
 
 const person ={
@@ -46,7 +45,7 @@ const person ={
 const D = Object.create(person);  // create() is used to create a new object using the existing object
 D.firstName ="Harri";
 D.lastName = "Prasad";
-// console.log(person.ID);
+console.log(person.ID);
 // D.Qualification();
 const object1 = {};
 
