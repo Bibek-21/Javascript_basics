@@ -109,38 +109,42 @@ function mean(){
 
 //  first('ram')('sharma');
 
- function createName(name)
- {  
-    let sx;
-    const cat_det = {
-        setName(newname){
-            name = newname;
-        },
-        getName(){
-            return name;
-        },
-        getSex(){
-            return sx;
-        },
-        setSex(newsx){
-            if((typeof (newsx) =="string") && (newsx.toLowerCase === "male"|| newsx.toLowerCase==="female"))
-            {
-                sx=newsx;
-            }
 
-        }
-    };
-    return cat_det;
- };
+    // let sx;
+    // const cat_det = {
+    //     setName(newname){
+    //         name = newname;
+    //     },
+    //     getName(){
+    //         return name;
+    //     },
+    //     getSex(){
+    //         return sx;
+    //     },
+    //     setSex(newsx){
+    //         if((typeof (newsx) =="string") && (newsx.toLowerCase() === "male")|| (newsx.toLowerCase()==="female"))
+    //         {
+    //           let sxxx="test";
+    //             console.log(sxxx);
+    //         }
 
-const cat_det = createName("joey");
-console.log(cat_det.getName());
-cat_det.setName("Okli");
-console.log(cat_det.getName());
-cat_det.setSex("male");
-
-console.log(cat_det.getSex());
-
-
- 
+    //     }
+    // };
   
+
+
+
+// const cat_det = createName("joey");
+// console.log(cat_det.getName());
+// cat_det.setName("Okli");
+// console.log(cat_det.getName());
+
+
+console.log(cat_det.setSex("male"));          //this didnot work as expected
+
+
+
+const isPrimeCheck=()=>
+{
+    
+}
