@@ -3,8 +3,7 @@
 //-- to create private and public variables and methods
 
 (()=>{
-    let sum = 0;
-    let a,b;
+   
 
 
 })();

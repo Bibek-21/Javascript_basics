@@ -37,6 +37,17 @@
          
             "program": "${workspaceFolder}\\distruct\\main.js"
 
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "objects",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+         
+            "program": "${workspaceFolder}\\object\\dateLearn.js"
+
         }
     
 
