@@ -33,7 +33,7 @@ fs.writeFile("books.txt",JSON.stringify(customer_id),{
     else{
         console.log("File is successfully written ");
         console.log("The newly added data is");
-        console.log(fs.readFile("books.txt","utf-8",(err,data)=> {
+        fs.readFile("books.txt","utf-8",(err,data)=> {
             if(err){
                 console.log("Error aayo");
             }
@@ -43,6 +43,9 @@ fs.writeFile("books.txt",JSON.stringify(customer_id),{
             }
         
         
-        }));
+        }
+        
+        
+        );
     }
 })
