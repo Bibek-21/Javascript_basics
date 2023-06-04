@@ -1,6 +1,7 @@
 //JSON stands for JavaScript Object Notation
 //JSON is text only data interchange format it can be written in any language
 //A common use of JSON is to read data from a web server, and display the data in a web page.
+//it is used to write an object into a file , we cannot write into a file without converting an array into string
 
 
 //JSON data and value
