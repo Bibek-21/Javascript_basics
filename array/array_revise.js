@@ -42,16 +42,19 @@ let arrayy =[1,23,5,8,1,4,5];
 // console.log(arrayy.flat(2));
 const arr1 = [1, 2, 1];
 
-const resu2lt = arr1.flatMap((num) => (num === 2 ? [[2, 2]] : 1));
+// const resu2lt = arr1.flatMap((num) => (num === 2 ? [[2, 2]] : 1));
 
-console.log("This is",resu2lt);
+// console.log("This is",resu2lt);
+
+console.log(arrayy.indexOf(23));
+console.log(Array.isArray(arr1));
 
 // const anyfnc=(element)=>{ 
 //     element+2}
 // const result = arr1.flatMap(anyfnc)
 // console.log(result);
 
-for (const a of b )
-{
-    //best loop
-}
+// for (const a of b )
+// {
+//     //best loop
+// }
