@@ -69,15 +69,8 @@ const newmap = new Map(             //we can pass an array (or another iterable)
 );
 
 console.log(newmap.get(1));
+console.log(newmap.get(2));
 
-
-
-const myArray = [];
-let i = 10;
-
-do {
-  myArray.push(i);
-  i++;
-} while (i < 10);
-
-console.log(myArray);
+// object and map can be interchanged by using entries and fromentries
+console.log(newmap);
+console.log(Object.fromEntries(newmap));
