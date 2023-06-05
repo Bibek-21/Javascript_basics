@@ -23,4 +23,4 @@ console.log(new Date(8.64e15).toString()); // "Sat Sep 13 275760 00:00:00 GMT+00
 const moonLanding = new Date('July 20, 69 20:17:40 GMT+00:00');
 
 // Milliseconds since Jan 1, 1970, 00:00:00.000 GMT
-console.log(moonLanding.getTime());
+console.log(moonLanding.getTime());     //

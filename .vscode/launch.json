@@ -48,7 +48,23 @@
          
             "program": "${workspaceFolder}\\object\\dateLearn.js"
 
+
+        },
+          {
+            "type": "node",
+            "request": "launch",
+            "name": "objectsjson",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+         
+            "program": "${workspaceFolder}\\object\\json_rev.js"
+
+
         }
+        
+
+
     
 
 
