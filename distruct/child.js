@@ -5,5 +5,4 @@ module.exports = (value) => {
         },
             value.sub = (a, b) => {
                 return a - b;
-            }
-    }
+            }}

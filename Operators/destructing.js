@@ -17,7 +17,7 @@ let a,b,cont;
 [a,b,...{pop,push}] = [2,3,4,5,6];
 console.log(` Array is  ${a}  ${b} `);
 // console.log(pop,push);  
-[a,b,...[c,d,...x]] = [2,3,4,5,6,7,8,9];
+[a,b,...[c,d,...x]] = [2,3,4,5,6,7,8,9];        //spread operator
 console.log(c,d);
 console.log(x);
 const anyobj = { name:"xyz", custom_id}

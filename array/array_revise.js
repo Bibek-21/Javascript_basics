@@ -19,24 +19,39 @@ let ent = x.entries();          //key value pair
 const condCheck = (x)=>{
     x>3 ? console.log("true"): console.log("false");
 }
-x.every(condCheck);
+// x.every(condCheck);
 
-console.log(x.fill('xk',2,4));
+// console.log(x.fill('xk',2,4));
 
 // console.log(x.pop());
-console.log(x.push(3,2));
-console.log(x);
+// console.log(x.push(3,2));
+// console.log(x);
 
 const arrayx = ["Rameshwor","Sita","Gita","Binita"];
 const filterfnc = (val)=> val.length<5;
 
-console.log(`The word with letters less than 5 is   [ ${arrayx.filter(filterfnc)} ]`);
-console.log(`The first word with letters less than 5 is   [ ${arrayx.find(filterfnc)} ]`);
-console.log(`The first word index with letters less than  is   [ ${arrayx.findIndex(filterfnc)} ]`);
-console.log(`The last word with letters less than  is   [ ${arrayx.findLast(filterfnc)} ]`);
-console.log(`The last word index with letters less than  is   [ ${arrayx.findLastIndex(filterfnc)} ]`);
+// console.log(`The word with letters less than 5 is   [ ${arrayx.filter(filterfnc)} ]`);
+// console.log(`The first word with letters less than 5 is   [ ${arrayx.find(filterfnc)} ]`);
+// console.log(`The first word index with letters less than  is   [ ${arrayx.findIndex(filterfnc)} ]`);
+// console.log(`The last word with letters less than  is   [ ${arrayx.findLast(filterfnc)} ]`);
+// console.log(`The last word index with letters less than  is   [ ${arrayx.findLastIndex(filterfnc)} ]`);
 
 
 
-let arrayy =[[[1,23,5,8]],[1,4,5]];
-console.log(arrayy.flat(1));
+let arrayy =[1,23,5,8,1,4,5];
+// console.log(arrayy.flat(2));
+const arr1 = [1, 2, 1];
+
+const resu2lt = arr1.flatMap((num) => (num === 2 ? [[2, 2]] : 1));
+
+console.log("This is",resu2lt);
+
+// const anyfnc=(element)=>{ 
+//     element+2}
+// const result = arr1.flatMap(anyfnc)
+// console.log(result);
+
+for (const a of b )
+{
+    //best loop
+}
