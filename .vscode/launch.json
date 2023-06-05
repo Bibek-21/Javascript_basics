@@ -61,6 +61,18 @@
             "program": "${workspaceFolder}\\object\\json_rev.js"
 
 
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "mapping",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+         
+            "program": "${workspaceFolder}\\MapsAndSets\\map.js"
+
+            
         }
         
 

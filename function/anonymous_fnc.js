@@ -30,4 +30,4 @@ setTimeout(() => {
 
 (()=>{
     console.log(`The details of the person is ${Person.name}. He is  ${Person.age} years old and his position is ${Person.position}`)
-})();
+})(Person);

@@ -54,7 +54,3 @@ console.log(Array.isArray(arr1));
 // const result = arr1.flatMap(anyfnc)
 // console.log(result);
 
-// for (const a of b )
-// {
-//     //best loop
-// }

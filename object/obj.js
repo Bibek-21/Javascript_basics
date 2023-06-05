@@ -151,3 +151,5 @@ console.log (Object.keys(AI));      // it returns the keyed propert name in the 
 
 console.log(Object.values(AI));     // it returns the property values in the object
 console.log(AI.machine(1,2));
+
+
