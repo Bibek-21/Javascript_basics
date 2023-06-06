@@ -85,9 +85,19 @@
             "program": "${workspaceFolder}\\function\\callbback.js"
 
             
-        }
-        
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "promises",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+         
+            "program": "${workspaceFolder}\\function\\promises.js"
 
+            
+        }
 
     
 

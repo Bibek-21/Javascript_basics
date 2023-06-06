@@ -34,27 +34,24 @@
 // let x= add(10,10,mean);
 // console.log(`The mean of two given numbers is  ${x}`);
 
-// let median =(arr,index)=>{
-//     let value = arr[index-1];
-//     return value;
 
-// };
-// let calculation = (array1,callback)=>{
-//     let i = array1.length;
-//     let nthterm = (i+1)/2 ;
-//     return callback(array1,nthterm);
-// };
+// callback function to calculate median 
+let median =(arr,index)=>{
+    let value = arr[index-1];
+    return value;
+
+};
+let calculation = (array1,callback)=>{
+    let i = array1.length;
+    let nthterm = (i+1)/2 ;
+    return callback(array1,nthterm);
+};
 let ascendingOrder=(array)=>{
-    let max=0;
+    return array.sort(function(a, b){return b-a});
 }
 
-let GaurabArray = [12,32,4,5,2];
-let y = GaurabArray.sort(function(a, b){return b-a});
+let GaurabArray = [1,2,3,4,5];
 
 
-// let y =calculation(GaurabArray,median);
-
-
+let y =calculation(ascendingOrder(GaurabArray),median);
 console.log(y);
-
-
