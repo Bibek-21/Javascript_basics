@@ -97,6 +97,17 @@
             "program": "${workspaceFolder}\\function\\promises.js"
 
             
+        },   {
+            "type": "node",
+            "request": "launch",
+            "name": "curry",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+         
+            "program": "${workspaceFolder}\\function\\currryfunction.js"
+
+            
         }
 
     
