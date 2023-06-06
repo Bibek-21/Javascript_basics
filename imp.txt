@@ -5,3 +5,7 @@
 ./ means the current directory;
 
 ../ means the parent of the current directory.
+
+use strict;
+-> it eliminates some js errors by throwing the errors
+-> it fixes those mistakes that makes it difficult for js engine to perform optimization
