@@ -52,4 +52,3 @@ karun.then((value, error) => {
 // catch()	Appends the rejection handler callback
 // then()	Appends the resolved handler callback
 // finally()	Appends a handler to the promise
-

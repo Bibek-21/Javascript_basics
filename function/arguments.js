@@ -1,11 +1,13 @@
-// let argu =(a,b,c)=>{
-//     console.log(arguments[0]);
-//     console.log(arguments[1]);
-//     console.log(arguments[2]);
+//arguments doesnot work with arrow functions instead rest parameter is used
 
-// };
+let argu =function(a,b,c){
+    console.log(arguments[0]);
+    console.log(arguments[1]);
+    console.log(arguments[2]);
 
-// argu(56,78,90);
+};
+
+argu(56,78,90);
 
 function func1(a, b, c) {
     console.log(arguments[0]);
