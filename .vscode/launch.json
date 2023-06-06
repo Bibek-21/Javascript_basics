@@ -73,6 +73,18 @@
             "program": "${workspaceFolder}\\MapsAndSets\\map.js"
 
             
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Callback",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+         
+            "program": "${workspaceFolder}\\function\\callbback.js"
+
+            
         }
         
 

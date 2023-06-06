@@ -7,5 +7,6 @@
 ../ means the parent of the current directory.
 
 use strict;
+It helps you to write cleaner code, like preventing you from using undeclared variables.
 -> it eliminates some js errors by throwing the errors
 -> it fixes those mistakes that makes it difficult for js engine to perform optimization
