@@ -1,0 +1,5 @@
+we will be studying MySQL
+SQL is used to insert, search, update, and delete database records.
+
+Example :
+SELECT * FROM Customers;

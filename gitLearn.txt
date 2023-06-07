@@ -1,0 +1,30 @@
+1.git status – Display a list of files in your staging directory with 
+accompanying file status.
+2.git add . --Stage file changes.
+// it stages all files in the staging directory
+3.git commit – Save changes to your Git repository.
+4.git commit -a – Add all modified and deleted files in your working 
+directory to the current commit.
+5.git commit -m – Add a Git commit message. 
+
+6.git merge <branch-name> – Merge changes from one branch into the
+ branch you currently have checked out.
+7.git merge --abort – Aborts the merge process and restores the project’s
+ state to before the merge was attempted
+8.git merge --continue – Attempt to complete a merge that was stopped due
+ to file conflicts after resolving the merge conflict.
+9. git merge --squash – Combine all changes from the branch being merged 
+into a single commit rather than preserving them as individual commits.
+10. git merge --no-commit – Combine branch into the current branch,
+ but do not make a new commit.
+11. git merge --no-ff – Creates a merge commit instead of attempting a fast-forward.
+
+
+12.git pull – This will perform a git fetch followed by a git merge FETCH_HEAD, 
+and will allow you to fetch from and integrate with another repository or a local branch.
+13.git pull --quiet – Suppress the output text after both git fetch and git merge.
+14.git pull --verbose – Expand the output text after both git fetch and git merge.
+
+
+15.git push <remote><branch> – Push the specified branch along with all of its necessary
+ commits to your destination remote repository. 

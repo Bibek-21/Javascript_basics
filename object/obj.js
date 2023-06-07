@@ -88,7 +88,10 @@ Object.freeze(environ); // it gets freezed and it cannot be changed
 
  const obj1 = {
     property3: 12,
-    property4 : "ohh ok"
+    property4 : "ohh ok",
+    methodo(){
+        return "Whats upp???";
+    }
 
  };
 
@@ -132,11 +135,11 @@ const AI = {            //object made
          return (a+b);
     }
 };
-console.log(AH.type);   // it gives undefined as it has no value
-Object.setPrototypeOf(AH,AI);       // it sets the prototype of AI to AH
-console.log(AH.type); // it gives ok
-const xyz= 1234.5634;
-console.log(xyz.toLocaleString('de-DE'));
+// console.log(AH.type);   // it gives undefined as it has no value
+// Object.setPrototypeOf(AH,AI);       // it sets the prototype of AI to AH
+// console.log(AH.type); // it gives ok
+// const xyz= 1234.5634;
+// console.log(xyz.toLocaleString('de-DE'));
 
 function Cat(name){
     this.name = name;
@@ -146,10 +149,11 @@ Cat.prototype.tostring = function CatToString(){        //it returns a string re
     return this.name;
 }
 
-console.log(cat1.tostring());
-console.log (Object.keys(AI));      // it returns the keyed propert name in the object AI
+// console.log(cat1.tostring());
+// console.log (Object.keys(AI));      // it returns the keyed propert name in the object AI
 
-console.log(Object.values(AI));     // it returns the property values in the object
-console.log(AI.machine(1,2));
+// console.log(Object.values(AI));     // it returns the property values in the object
+// console.log(AI.machine(1,2));
+console.log(obj1);
 
 

@@ -1,0 +1,10 @@
+.gameContainer{
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    margin-top: 49 px;
+
+}
+.container{
+
+}
