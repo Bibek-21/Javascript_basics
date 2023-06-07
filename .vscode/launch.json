@@ -108,6 +108,18 @@
             "program": "${workspaceFolder}\\function\\currryfunction.js"
 
             
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "async",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+         
+            "program": "${workspaceFolder}\\function\\asyncAwait.js"
+
+            
         }
 
     

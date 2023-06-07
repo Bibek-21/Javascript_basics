@@ -42,12 +42,19 @@ const karun = new Promise(function (resolve, reject) {
 }
 );
 
-karun.then((value, error) => {
+karun.then((value) => {
     Myfnc(value);
-    Myfnc(error);
 }
 
-)
+);
+
+karun.catch((error)=>{
+    console.log("Error aako xa");
+});
+
+karun.finally(()=>{
+    console.log("Fially kam sakiyo");
+})
 // we can use methods then(),cathch()and finally()
 // catch()	Appends the rejection handler callback
 // then()	Appends the resolved handler callback
