@@ -120,6 +120,18 @@
             "program": "${workspaceFolder}\\function\\asyncAwait.js"
 
             
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "tictactoe",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+         
+            "program": "${workspaceFolder}\\TicTac\\index.html"
+
+            
         }
 
     
