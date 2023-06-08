@@ -22,9 +22,29 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
 
 
 }
+.line{
+    background-color: black;
+    width: 20vw;
+    height: 3px;
+    position: relative;
+    transform: rotate(45deg);
+    transform: translate(150px,85px);
+    display: none;
+}
 .box:hover {
  background-color: aliceblue;
 }
+.reset:active {
+    background-color: blue;
+
+    outline-color: transparent;
+    outline-style:solid;
+    box-shadow: 0 0 0 4px #5a01a7;
+    transition: 0.01s;
+}
+/* .reset:focus{
+    background-color: blue;
+} */
 
 .bt-0{
 border-top: 0;
@@ -39,4 +59,7 @@ border-bottom: 0;
 
 .br-0{
 border-right: 0;
+}
+.reset{
+    justify-content: center;
 }
