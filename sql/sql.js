@@ -71,7 +71,7 @@ connection.connect(function (err) {
     // let sql = `update studentsinfo
     // set Admission_date='2080-01-01'
     // where Students_Name= 'Aaditya Khanal' and RollNo ='1'`;
-    let sql =`select * from studentsinfo`;
+    // let sql =`select * from studentsinfo`;
 //     let sql = `update studentsinfo
 //  set Admission_date='2080-01-02'
 // where Students_Name= 'Aayush Joshi' and RollNo ='2'`;
@@ -81,10 +81,14 @@ connection.connect(function (err) {
 //  let sql = `update studentsinfo
 //  set Admission_date='2080-01-11'
 //  where Students_Name= 'Bibhushan Poudel' and RollNo ='4'`
+let sql = `select * from studentsinfo`;
+
+
  
     connection.query(sql, (err, result) => {
         if (err) throw err;
         console.log(result);
 
     })
+
 });

@@ -23,39 +23,71 @@
 //  and the second argument is a callback function for the rejected case.
 
 
-const Myfnc = (value) => {
-    console.log(`This is Myfnc ${value}`);
-}
+// const Myfnc = (value) => {
+//     console.log(`This is Myfnc ${value}`);
+// }
 
-const karun = new Promise(function (resolve, reject) {
-    setTimeout(() => {
-        let x = 12;
-        if (x == 0) {
-            resolve("It is zero");
-        }
-        else {
-            reject("It is non zero");
-        }
+// const karun = new Promise(function (resolve, reject) {
+//     setTimeout(() => {
+//         let x = 7;
+//         if (x == 0) {
+//             resolve("It is zero");
+//         }
+//         else {
+//             reject("It is non zero");
+//         }
 
-    }, 1000);
+//     }, 1000);
 
-}
-);
+// }
+// );
 
-karun.then((value) => {
-    Myfnc(value);
-}
+// karun.then((value) => {
+//     Myfnc(value);
+// }
 
-);
+// );
 
-karun.catch((error)=>{
-    console.log("Error aako xa");
-});
+// karun.catch((error)=>{
+//     console.log("Error aako xa");
+// });
 
-karun.finally(()=>{
-    console.log("Fially kam sakiyo");
-})
+// karun.finally(()=>{
+//     console.log("Finally kam sakiyo");
+// })
 // we can use methods then(),cathch()and finally()
 // catch()	Appends the rejection handler callback
 // then()	Appends the resolved handler callback
 // finally()	Appends a handler to the promise
+
+
+
+    let dispfnc =(val)=>{
+        console.log(`This is the value  ${val}`);
+    };
+
+
+    let eutaval = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            let val = 999;
+        if(val<90) resolve("Thik vayo calculation");
+        else reject("Thik xaena calculation");
+        
+        }, 5000);
+
+        
+    });
+
+
+    eutaval.then((result)=>{
+        dispfnc(result)
+
+    });
+
+    eutaval.catch(()=>{
+        console.log(`Error aayo ta yr`);
+    })
+
+    eutaval.finally(()=>{
+        console.log(`Kaam Khatam Paisa Hajam`);
+    })

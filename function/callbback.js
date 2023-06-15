@@ -46,12 +46,39 @@ let calculation = (array1,callback)=>{
     let nthterm = (i+1)/2 ;
     return callback(array1,nthterm);
 };
-let ascendingOrder=(array)=>{
-    return array.sort(function(a, b){return b-a});
+let ascendingOrder=(value)=>{
+    return value.sort(function(a, b){return b-a});
 }
 
-let GaurabArray = [1,2,3,4,5];
+let GaurabArray = [1,2,4,8,9,3,4,5,5];
 
 
 let y =calculation(ascendingOrder(GaurabArray),median);
 console.log(y);
+
+
+let greet = (name)=>{
+    console.log(`Hello, Is this ${name},Welcome`);
+
+}
+
+let rand_input = (mycallback)=>{
+    const name= 'Rameshwor Yadav';
+    mycallback(name)
+
+}
+
+rand_input(greet);
+
+
+
+
+
+
+
+
+
+
+
+
+
