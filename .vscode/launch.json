@@ -132,7 +132,9 @@
             "program": "${workspaceFolder}\\TicTac\\index.html"
 
             
-        }
+        },
+        
+
 
     
 

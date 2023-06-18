@@ -29,7 +29,7 @@ const array5 =  array1.fill(0,1,5); // put 0 from index 1 to 5
 
 const alpha = [ 'okey','Rameshwor','k xa','what','how'];
 const filterfnc = (element)=> element.length<1;     // it is used to filter elements in thre array [creates a shallow copy of a portion of a given array]
-// console.log(alpha.filter(filterfnc));
+console.log(alpha.filter(filterfnc));
 
  const findvalue = (element)=> element.length>2;     //returns the first element in the provided array that satisfies the given condition
 // console.log(alpha.find(findvalue));

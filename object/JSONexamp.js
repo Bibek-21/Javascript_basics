@@ -1,4 +1,4 @@
-const fs = require('fs');
+import { writeFile, readFile } from 'fs';
 // let data_content = "This is a file containing a collection of books.";
   
 // //.writeFile is used to write data into the file 
@@ -19,7 +19,7 @@ const fs = require('fs');
 
 const customer_id = {name:"Kaley", address:"Nepal", customerID:"123KL*"};
 
-fs.writeFile("books.txt",JSON.stringify(customer_id),{
+writeFile("books.txt",JSON.stringify(customer_id),{
     encoding: 'utf-8',
     flag:'a',       //control how the file will be created and written --w iswhich creates the file (if the file does not already exist) or overwrites whatever data the file has with the new data if file already exist
     mode:0o66       //The mode property sets the file mode (permissions)
@@ -33,7 +33,7 @@ fs.writeFile("books.txt",JSON.stringify(customer_id),{
     else{
         console.log("File is successfully written ");
         console.log("The newly added data is");
-        fs.readFile("books.txt","utf-8",(err,data)=> {
+        readFile("books.txt","utf-8",(err,data)=> {
             if(err){
                 console.log("Error aayo");
             }
